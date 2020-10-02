@@ -421,4 +421,7 @@ def predict():
 
 
 if __name__ == "__main__":
+    const PORT = process.env.port || '8080'
+    app =express();
+    app.set("port",PORT):
     app.run(debug=True)
