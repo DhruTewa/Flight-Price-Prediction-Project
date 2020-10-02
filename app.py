@@ -17,7 +17,7 @@ def home():
 
 
 
-@app.route("/predict", methods = ["GET", "POST"])
+@app.route("/predict", methods = ["POST"])
 @cross_origin()
 def predict():
     if request.method == "POST":
