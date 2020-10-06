@@ -67,7 +67,7 @@ The datapreprocessing involves steps
  - Data Imputation
 
 
-## Model Developement([code](https://github.com/DhruTewa/Salary-Prediction-Project/blob/master/Salary%20Prediction%20Project_Model%20Creation.ipynb))
+## Model Developement([code](https://github.com/DhruTewa/Flight-Price-Prediction-Project/blob/main/app.py))
 
 We will evaluate algorithms using the Root Mean Squared Error (RMSE) metric. RMSE will give a gross idea of how wrong all predictions are.We will use 10-fold cross-validation.
 
