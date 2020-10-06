@@ -41,11 +41,9 @@ The features in the dataframe are:
 
 ![Airlines vs Price](https://github.com/DhruTewa/Flight-Price-Prediction-Project/blob/main/Images/6-Airline%20vs%20Price.png)
 
-+ There is significant difference in salaries between the high school degree and masters or doctorate degree observation
 
 ![Source vs Price](https://github.com/DhruTewa/Flight-Price-Prediction-Project/blob/main/Images/7-Source%20vs%20Price.png)
 
-+ Salary is also varying depending upon the industry
 
 ![Destination vs Price](https://github.com/DhruTewa/Flight-Price-Prediction-Project/blob/main/Images/8-Destination%20vs%20Price.png)
 
@@ -68,16 +66,10 @@ The datapreprocessing involves steps
  - Onehot Encoding
  - Data Imputation
 
-We will evaluate algorithms using the Mean Squared Error (MSE) metric. MSE will give a gross idea of how wrong all predictions are.We will use 10-fold cross-validation.
-
-For model developement we are selecting three linear models
-- Linear Regression(LR)
-- Lasso Regression(LASO)
-- Elasctic Net(EN)
 
 ## Model Developement([code](https://github.com/DhruTewa/Salary-Prediction-Project/blob/master/Salary%20Prediction%20Project_Model%20Creation.ipynb))
 
-For creating baseline model I selected: 
+We will evaluate algorithms using the Root Mean Squared Error (RMSE) metric. RMSE will give a gross idea of how wrong all predictions are.We will use 10-fold cross-validation.
 
 - Linear Regression(LR)
 - Decision Tree Regressor(DTR)
@@ -93,28 +85,25 @@ The algorithms all use default tuning parameters. By comparing the below table R
 
 ![Model Comparision](https://github.com/DhruTewa/Flight-Price-Prediction-Project/blob/main/Images/10-Model%20Comparision.png)
 
+Created a baseline model using Random Forest Regression wit R-square value as **.7837**
 
-### Model Tuning
+### Hyperparameter Tuning
 
 To improve the performance of algorithms, ensemble methods is used. I have used two ensemble machine learning algorithms:
 
 - **Boosting Method** : Gradient Boosting (GBM).
 - **Bagging Method**  : Random Forests (RF)
 
-From we have got following results:
-
-|Model|MSE   |
-|-----|------|
-|LR   |384.44|
-|GBM  |357.16|
-|RF   |367.77|
-
-### Model Evaluation
-
-Seeing the above results from the training model we have **357.16** as the lowest **MSE** value and hence is the best model to use for predicting the salary.
+and found Random Search more effective and model building with R-Square **.8050** 
 
 ### Feature Importance:
 
 By looking at the graph below we can say that *yearofexperience* and *milesfrommetropolitan* are two major factors in predicting the salary.
 
 ![Feature Importance](https://github.com/DhruTewa/Flight-Price-Prediction-Project/blob/main/Images/11-Feature%20Importance.png)
+
+### Model Deployment
+
+Used Flask to deploy the model created:
+
+![Model Deployment](https://github.com/DhruTewa/Flight-Price-Prediction-Project/blob/main/Images/12-Model%20Deployment.PNG)
