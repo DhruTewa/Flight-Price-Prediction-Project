@@ -1,7 +1,8 @@
 # Regression Project - Flight Prediction Project
 
 ## Problem Defination
-This project is to examine a set of job postings with salaries and then predict salaries for a new set of job postings. Our job is as a data scientist is to create a model which predict the salaries for the job posting.
+
+Flight ticket prices can be something hard to guess, today we might see a price, check out the price of the same flight tomorrow, it will be a different story.Here you will be provided with prices of flight tickets for various airlines between the months of March and June of 2019 and between various cities and the goal is to predict the future prices of the flights givent the source, destination and date of journey.
 
 ## Discover the Data
 
