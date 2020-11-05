@@ -76,7 +76,7 @@ We will evaluate algorithms using the Root Mean Squared Error (RMSE) metric. RMS
 - Decision Tree Regressor(DTR)
 - Random Forest Regressor(RFR)
 
-The algorithms all use default tuning parameters. By comparing the below table RMSE for Linear regression is the lowest and hence we will select it as the baseline model.
+The algorithms all use default tuning parameters. By comparing the below table RMSE for Random Forest regression is the lowest and hence we will select it as the baseline model.
 
 |Model |MSE Value|
 |------|---------|
